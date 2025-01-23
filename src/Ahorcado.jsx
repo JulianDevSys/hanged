@@ -20,7 +20,7 @@ export default function Ahorcado() {
   const imagen=[palo,cabeza,cabezacuerpo,cuerpobrazo,ambosbrazos,pierna,ambaspiernas]
   const fallasMaximas = 6;
   const palabras = ["perro", "ficcion", "aristoteles", "viagra", "bebesote","marica","enfermo","hermano","mario", "zelda", "metroid", "pokemon", "fortnite", "minecraft", 
-  "halo", "dota", "warcraft", "overwatch", "valorant", "cyberpunk", 
+  "halo", "dotado", "warcraft", "overwatch", "valorant", "cyberpunk", 
   "tetris", "arcade", "fallout", "eldenring", "horizon", "bloodborne"]
 
 
@@ -78,7 +78,6 @@ export default function Ahorcado() {
       }
 
       setMensaje(`¡Correcto! La letra "${letra}" está en la palabra.`);
-
 
     } else {
       setFallas((prevFallas) => prevFallas + 1);

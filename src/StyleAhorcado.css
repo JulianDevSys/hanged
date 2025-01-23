@@ -25,7 +25,7 @@
 
 .header_ahorcado {
     display: flex;
-    background-color: rgba(0, 128, 255, 0.8);
+    background-color: rgba(80, 151, 221, 0.623);
     width: 98.3%;
     border-radius: 10px;
     justify-content: space-between;
@@ -70,8 +70,8 @@
 .imagenes {
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    width: 63%;
-    height: 90%;
+    width: 50%;
+    height: 95%;
     border-radius: 10px;
     padding: 10px;
     justify-content: center;
@@ -84,8 +84,8 @@
 /* Imagen del ahorcado */
 .ahoracado_diseño {
     display: flex;
-    width: 50%;
-    height:90%; 
+    width: 45%;
+    height:80%; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
 }
@@ -101,11 +101,13 @@
 }
 
 .mensajes_ahorcado {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
     color: #ffcb47;
     border-radius: 5px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    word-wrap: break-word;
+
 }
 
 
@@ -123,6 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* Entrada de texto */
