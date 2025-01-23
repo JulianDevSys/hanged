@@ -13,39 +13,43 @@
 .principals_ahorcado {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 65%;
-    height: 95%;
+    height: 490px;
     background-color: rgba(89, 99, 117, 0.767);
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 
 
 .header_ahorcado {
     display: flex;
     background-color: rgba(0, 128, 255, 0.8);
-    width: 98.5%;
+    width: 98.3%;
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap;
 }
 .words{
-    font-size: 15px;
+    font-size: 13px;
     color: white;
+    background-color: #ffc371;
 }
 
 .btn_reiniciar_ahorcado {
     display: flex;
-    width: 30%;
+    width: 10%;
     justify-content: center;
     background: linear-gradient(135deg, #ff5f6d, #ffc371);
     color: white;
     font-weight: bold;
-    border-radius: 25px;
+    font-size: 70%;
+    border-radius: 20px;
     cursor: pointer;
     padding: 10px 20px;
     transition: all 0.3s ease;
@@ -119,7 +123,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
 /* Entrada de texto */
