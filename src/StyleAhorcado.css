@@ -38,7 +38,6 @@
 .words{
     font-size: 13px;
     color: white;
-    background-color: #ffc371;
 }
 
 .btn_reiniciar_ahorcado {
@@ -65,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30%;
 }
 
 .imagenes {
@@ -94,13 +94,13 @@
 .Mensajes_ahor{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 45%;
+    flex-wrap: wrap;
+
 }
 
 .mensajes_ahorcado {
-    display: flex;
     font-size: 24px;
     font-weight: bold;
     color: #ffcb47;
