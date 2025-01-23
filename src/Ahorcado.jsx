@@ -95,32 +95,39 @@ export default function Ahorcado() {
 
   return (
     <div className="cuerpo">
+
+      <div className="ahorcado">
+        
+        
+       
     <div className="principals_ahorcado">
+
       <div className="header_ahorcado">
-      <p>Juego de Adivinanza</p>
-      <p>Turno: {turno}</p>
-      <p>Fallas: {fallas}/ {fallasMaximas}</p>
+      <p className="words">Juego de Adivinanza</p>
+      <p className="words">Turno: {turno}</p>
+      <p className="words">Fallas: {fallas}/ {fallasMaximas}</p>
       <div className="btn_reiniciar_ahorcado" onClick={()=>{
         reiniciarJuego()
       }}>reiniciar juego</div>
       </div>
-      
-      <div className="imagenes">
-      
+
+        <div className="todo">
+
+      <div className="imagenes">      
         {imagenes.map((element,index)=>{
           return(
-          <div className="juego" key={index}>
-            <img className= "ahoracado_diseño"src={element}  />
-            {console.log(element)}
-            </div>
+            <img className= "ahoracado_diseño" key={index} src={element}  />
         )})}
       </div>
+    </div>
 
+      <div className="Mensajes_ahor">
+        <p className="mensajes_ahorcado">{mensaje}</p>
+        <p className="adivina">adivina la palabra: {estado}</p>
 
-      <p className="mensajes_ahorcado">{mensaje}</p>
-      <p className="adivina">adivina la palabra: {estado}</p>
+      </div>
   
-
+        <div className="word">
       {fallas < fallasMaximas && estado.includes("*") && (
         <input className= "ahorcado_input"type="text" maxLength="1" onKeyDown={(e) => 
           { if (e.key === "Enter" && e.target.value) {
@@ -131,7 +138,10 @@ export default function Ahorcado() {
           placeholder="Adivina una letra"
         />
       )}
-    </div>
-    </div>
+      </div>
+
+      </div>
+    </div>    
+</div>
   );
 }
