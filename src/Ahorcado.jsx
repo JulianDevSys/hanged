@@ -122,7 +122,7 @@ export default function Ahorcado() {
 
       <div className="Mensajes_ahor">
         <p className="mensajes_ahorcado">{mensaje}</p>
-        <p className="adivina">adivina la palabra: {estado}</p>
+        <p className="adivina">Adivina La Palabra: {estado}</p>
 
       </div>
   

@@ -20,6 +20,8 @@
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    border-style: groove;
+    border-color: rgb(139, 118, 118);
 }
 
 
@@ -70,7 +72,7 @@
 .imagenes {
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    width: 50%;
+    width: 60%;
     height: 95%;
     border-radius: 10px;
     padding: 10px;
@@ -115,10 +117,10 @@
     display: flex;
     font-size: 24px;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(112, 112, 112, 0.767);
     padding: 10px;
     border-radius: 5px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 3px rgba(63, 58, 58, 0.904);
 }
 
 .word{
@@ -157,3 +159,34 @@ p {
 .header_ahorcado p {
     margin: 0 10px;
 }
+
+/* Media query para pantallas grandes */
+@media (min-width: 1024px) {
+    .principals_ahorcado {
+        width:50%; 
+        height: 85%;
+    }
+
+    .imagenes {
+        width: 50%;
+        height: 100%;
+    }
+
+    .ahorcado_diseño {
+        width: 80%; 
+        height: 80%;
+    }
+
+    .header_ahorcado p {
+        font-size: 18px; 
+    }
+
+    .ahorcado_input {
+        font-size: 20px; 
+    }
+
+    .btn_reiniciar_ahorcado {
+        font-size: 1rem; 
+    }
+}
+
